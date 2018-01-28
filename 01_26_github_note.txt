@@ -1,0 +1,303 @@
+➜  ~ git:(master) ✗ ls      
+Applications              Library                   PycharmProjects
+BME590                    Movies                    dynetica.cfg
+Desktop                   Music                     iCloud Drive（归档）
+Documents                 Pictures                  matlab_crash_dump.17793-1
+Downloads                 Public                    test.dyn
+➜  ~ git:(master) ✗ ll
+total 80
+drwx------   3 levipx  staff   102B Oct 15 12:04 Applications
+drwxr-xr-x   4 levipx  staff   136B Jan 24 11:54 BME590
+drwx------+ 41 levipx  staff   1.4K Jan 25 20:09 Desktop
+drwx------+  7 levipx  staff   238B Jan  2 22:14 Documents
+drwx------+ 63 levipx  staff   2.1K Jan 25 15:23 Downloads
+drwx------@ 62 levipx  staff   2.1K Dec  9 23:36 Library
+drwx------+  5 levipx  staff   170B Sep 11 19:27 Movies
+drwx------+  5 levipx  staff   170B Nov  5 12:55 Music
+drwx------+  5 levipx  staff   170B Nov 19 23:33 Pictures
+drwxr-xr-x+  5 levipx  staff   170B Jul 30 05:00 Public
+drwxr-xr-x   3 levipx  staff   102B Jan 21 23:19 PycharmProjects
+-rw-r--r--   1 levipx  staff   181B Dec  8 12:05 dynetica.cfg
+drwxr-xr-x   9 levipx  staff   306B Nov 28 23:42 iCloud Drive（归档）
+-rw-r--r--   1 levipx  staff     0B Nov  9 19:51 matlab_crash_dump.17793-1
+-rw-r--r--   1 levipx  staff    33K Oct 29 21:48 test.dyn
+➜  ~ git:(master) ✗ sudo rm .git/
+Password:
+rm: .git/: is a directory
+➜  ~ git:(master) ✗ ls
+Applications              Library                   PycharmProjects
+BME590                    Movies                    dynetica.cfg
+Desktop                   Music                     iCloud Drive（归档）
+Documents                 Pictures                  matlab_crash_dump.17793-1
+Downloads                 Public                    test.dyn
+➜  ~ git:(master) ✗ sudo rm -r .git/
+➜  ~ git                            
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+➜  ~ cd git
+cd: no such file or directory: git
+➜  ~ ls
+Applications              Library                   PycharmProjects
+BME590                    Movies                    dynetica.cfg
+Desktop                   Music                     iCloud Drive（归档）
+Documents                 Pictures                  matlab_crash_dump.17793-1
+Downloads                 Public                    test.dyn
+➜  ~ locate git 
+
+
+
+
+➜  ~ ls
+Applications              Library                   PycharmProjects
+BME590                    Movies                    dynetica.cfg
+Desktop                   Music                     iCloud Drive（归档）
+Documents                 Pictures                  matlab_crash_dump.17793-1
+Downloads                 Public                    test.dyn
+➜  ~ cd Applications 
+➜  Applications ls
+➜  Applications cd ..
+➜  ~ cd Documents 
+➜  Documents ls
+Digital Editions   Fall_2017_Semester MATLAB
+➜  Documents ls
+Digital Editions   Fall_2017_Semester MATLAB
+➜  Documents mkdir git
+➜  Documents ls
+Digital Editions   Fall_2017_Semester MATLAB             git
+➜  Documents cd git 
+➜  git ls
+➜  git git clone git@github.com:Rorschachwind/Hello-world.git
+Cloning into 'Hello-world'...
+Enter passphrase for key '/Users/levipx/.ssh/id_rsa': 
+
+➜  git ls
+➜  git ls            
+➜  git vim ~/.ssh/id_rsa.pub 
+➜  git git clone git@github.com:Rorschachwind/Hello-world.git
+Cloning into 'Hello-world'...
+Enter passphrase for key '/Users/levipx/.ssh/id_rsa': 
+remote: Counting objects: 7, done.
+remote: Total 7 (delta 0), reused 0 (delta 0), pack-reused 7
+Receiving objects: 100% (7/7), done.
+➜  git ls
+Hello-world
+➜  git cd Hello-world 
+➜  Hello-world git:(master) LS
+README.md
+➜  Hello-world git:(master) ls
+README.md
+➜  Hello-world git:(master) vim README.md 
+➜  Hello-world git:(master) ✗ git add .
+➜  Hello-world git:(master) ✗ git commit -m "do you like me?"
+[master 89b3b0a] do you like me?
+ Committer: levi px <levipx@levideMacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+➜  Hello-world git:(master) git config --global 
+add            -- git add options
+advice         -- options controlling advice
+alias          -- command aliases
+am             -- git am options
+apply          -- git apply options
+branch         -- branch options
+browser        -- browser options
+clean          -- git clean options
+color          -- color options
+column         -- column options
+commit         -- git commit options
+core           -- options controlling git core
+credential     -- credential options
+diff           -- diff options
+difftool       -- difftools
+fetch          -- git fetch options
+format         -- format options
+gc             -- git gc options
+gitcvs         -- git-cvs options
+gpg            -- gpg options
+gui            -- git gui options
+guitool        -- git gui tool options
+help           -- git help options
+http           -- http options
+i18n           -- internationalization options
+imap           -- IMAP options
+init           -- git init options
+instaweb       -- git web options
+interactive    -- options controlling interactivity
+log            -- git log options
+mailmap        -- mailmap options
+man            -- man options
+merge          -- git merge options
+mergetool      -- mergetools
+notes          -- git notes options
+pack           -- options controlling packing
+pager          -- pager options
+pretty         -- pretty formats
+pull           -- git pull options
+push           -- git push options
+rebase         -- git rebase options
+receive        -- git receive options
+remote         -- remotes
+remotes        -- remotes groups
+repack         -- repack options
+rerere         -- git rerere options
+sendemail      -- git send-email options
+showbranch     -- showbranch options
+status         -- git status options
+submodule      -- git submodule options
+svn            -- git svn options
+svn-remote     -- git svn remotes
+tar            -- git tar-tree options
+transfer       -- options controlling transfers
+uploadarchive  -- git upload-archive options
+uploadpack     -- git upload-pack options
+url            -- URL prefixes
+user           -- options controlling user identity
+web            -- web options
+➜  Hello-world git:(master) git config --global user.name xiaopeng
+➜  Hello-world git:(master) git config --global user.email 0820xiaopeng@gmail.com
+➜  Hello-world git:(master) git commit -m "do you like me?"       
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+➜  Hello-world git:(master) git push
+Enter passphrase for key '/Users/levipx/.ssh/id_rsa': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 318 bytes | 318.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:Rorschachwind/Hello-world.git
+   d08aa2b..89b3b0a  master -> master
+➜  Hello-world git:(master) ls
+README.md
+➜  Hello-world git:(master) git                                   
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+➜  Hello-world git:(master) git branch
+* master
+➜  Hello-world git:(master) git branch kebai
+➜  Hello-world git:(master) ls
+README.md
+➜  Hello-world git:(master) git branch
+  kebai
+* master
+➜  Hello-world git:(master) git checkout kebai 
+Switched to branch 'kebai'
+➜  Hello-world git:(kebai) git status
+On branch kebai
+nothing to commit, working tree clean
+➜  Hello-world git:(kebai) cd
+➜  ~ ls
+Applications              Library                   PycharmProjects
+BME590                    Movies                    dynetica.cfg
+Desktop                   Music                     iCloud Drive（归档）
+Documents                 Pictures                  matlab_crash_dump.17793-1
+Downloads                 Public                    test.dyn
+➜  ~ cd Documents 
+➜  Documents ls 
+Digital Editions   Fall_2017_Semester MATLAB             git
+➜  Documents cd git 
+➜  git ls
+Hello-world
+➜  git cd Hello-world 
+➜  Hello-world git:(kebai) cd ..
+➜  git cd Hello-world 
+➜  Hello-world git:(kebai) ls
+README.md
+➜  Hello-world git:(kebai) git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+➜  Hello-world git:(master) 
